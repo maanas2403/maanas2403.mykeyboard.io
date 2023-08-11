@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('bg.png');
+            background-size: cover;
+            background-attachment: fixed;
+            overflow-x: hidden;
+        }
+        .piano-back{
+         background-color: #b4dcde;
+         height: 300px;
+         width: 1370px;  
+         position: absolute;
+         left:-350px;
+         top: 120px; 
+        }
+        .piano{
+            position: relative;
+            left: 400px;
+            top: 100px;
+        }
+        .white{
+            display: inline-block;
+            background-color: white;
+            border: 1px solid black;
+            height: 240px;
+            width: 60px;
+            position: absolute;
+            z-index: 1;
+            cursor: pointer;
+        }
+        .black{
+            display: inline-block;
+            background-color: black;
+            border: 1px solid black;
+            height: 140px;
+            width: 50px;
+                position: absolute;
+                z-index: 2;
+                cursor: pointer;
+        }
+        #first{
+            position: absolute;
+            left: -300px;
+            top:150px;
+        }
+        #second{
+            position: absolute;
+            left: -240px;
+            top:150px;
+        }
+        
+        #third{
+            position: absolute;
+            left: -180px;
+            top:150px;
+        }
+        #fourth{
+            position: absolute;
+            left: -120px;
+            top:150px;
+        }
+        #fifth{
+            position: absolute;
+            left: -60px;
+            top:150px;
+        }
+        #sixth{
+            position: absolute;
+            left: 0px;
+            top:150px;
+        }
+        #seventh{
+            position: absolute;
+            left: 60px;
+            top:150px;
+        }
+        #eighth{
+            position: absolute;
+            left: 120px;
+            top:150px;
+        }
+        #ninth{
+            position: absolute;
+            left: 180px;
+            top:150px;
+        }
+        #tenth{
+            position: absolute;
+            left: 240px;
+            top:150px;
+        }
+        #eleventh{
+            position: absolute;
+            left: 300px;
+            top:150px;
+        }
+        #twelth{
+            position: absolute;
+            left: 360px;
+            top:150px;
+        }
+        #thirteenth{
+            position: absolute;
+            left: 420px;
+            top:150px;
+        }
+        #fourteenth{
+            position: absolute;
+            left: 480px;
+            top:150px;
+        }
+        #fifteenth{
+            position: absolute;
+            left: 540px;
+            top:150px;
+        }
+        #sixteenth{
+            position: absolute;
+            left: 600px;
+            top:150px;
+        }
+        #seventeenth{
+            position: absolute;
+            left: 660px;
+            top:150px;
+        }
+        #eighteenth{
+            position: absolute;
+            left: 720px;
+            top:150px;
+        }
+        #nineteenth{
+            position: absolute;
+            left: 780px;
+            top:150px;
+        }
+        #twentieth{
+            position: absolute;
+            left: 840px;
+            top:150px;
+        }
+        #twentyfirst{
+            position: absolute;
+            left: 900px;
+            top:150px;
+        }
+        #Dbblack{
+            position: absolute;
+            left: -270px;
+            top:150px;
+        }
+        #Ebblack{
+            position: absolute;
+            left: -210px;
+            top:150px;
+        }
+        #Gbblack{
+            position: absolute;
+            left: -90px;
+            top:150px;
+        }
+        #Abblack{
+            position: absolute;
+            left: -30px;
+            top:150px;
+        }
+        #Bbblack{
+            position: absolute;
+            left: 30px;
+            top:150px;
+        }
+        #Dbblack2{
+            position: absolute;
+            left: 150px;
+            top:150px;
+        }
+        #Ebblack2{
+            position: absolute;
+            left: 210px;
+            top:150px;
+        }
+        #Gbblack2{
+            position: absolute;
+            left:330px;
+            top:150px;
+        }
+        #Abblack2{
+            position: absolute;
+            left:390px;
+            top:150px;
+        }
+        #Bbblack2{
+            position: absolute;
+            left:450px;
+            top:150px;
+        }
+        #Dbblack3{
+            position: absolute;
+            left:570px;
+            top:150px;
+        }
+        #Ebblack3{
+            position: absolute;
+            left:630px;
+            top:150px;
+        }
+        #Gbblack3{
+            position: absolute;
+            left:750px;
+            top:150px;
+        }
+        #Abblack3{
+            position: absolute;
+            left:810px;
+            top:150px;
+        }
+        #Bbblack3{
+            position: absolute;
+            left:870px;
+            top:150px;
+        }
+        p{
+            background-color: black;
+            color: white;
+            position: absolute;
+            top: 650px;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="piano">
+        
+        <div class="piano-back"></div>
+        <div class="white" id="first" data-note="C"></div>
+        <div class="black" id="Dbblack" data-note="Db"></div>
+        <div class="white" id="second" data-note="D"></div>
+        <div class="black" id="Ebblack" data-note="Eb"></div>
+        <div class="white" id="third" data-note="E"></div>
+        <div class="black" id="Gbblack" data-note="Gb"></div>
+        <div class="white" id="fourth" data-note="F"></div>
+        <div class="black" id="Abblack" data-note="Ab"></div>
+        <div class="white" id="fifth" data-note="G"></div>
+        <div class="black" id="Bbblack" data-note="Bb"></div>
+        <div class="white" id="sixth" data-note="A"></div>
+        <div class="white" id="seventh" data-note="B"></div>
+        <div class="white" id="eighth" data-note="C2"></div>
+        <div class="black" id="Dbblack2" data-note="Db2"></div>
+        <div class="white" id="ninth" data-note="D2"></div>
+        <div class="black" id="Ebblack2" data-note="Eb2"></div>
+        <div class="white" id="tenth" data-note="E2"></div>
+        <div class="white" id="eleventh" data-note="F2"></div>
+        <div class="black" id="Gbblack2" data-note="Gb2"></div>
+        <div class="white" id="twelth" data-note="G2"></div>
+        <div class="white" id="thirteenth" data-note="A2"></div>
+        <div class="black" id="Abblack2" data-note="Ab2"></div>
+        <div class="black" id="Bbblack2" data-note="Bb2"></div>
+        <div class="white" id="fourteenth" data-note="B2"></div>
+        <div class="white" id="fifteenth" data-note="C3"></div>
+        <div class="black" id="Dbblack3" data-note="Db3"></div>
+        <div class="white" id="sixteenth" data-note="D3"></div>
+        <div class="black" id="Ebblack3" data-note="Eb3"></div>
+        <div class="white" id="seventeenth" data-note="E3"></div>
+        <div class="white" id="eighteenth" data-note="F3"></div>
+        <div class="black" id="Gbblack3" data-note="Gb3"></div>
+        <div class="white" id="nineteenth" data-note="G3"></div>
+        <div class="black" id="Abblack3" data-note="Ab3"></div>
+        <div class="white" id="twentieth" data-note="A3"></div>
+        <div class="black" id="Bbblack3" data-note="Bb3"></div>
+        <div class="white" id="twentyfirst" data-note="B3"></div>
+        
+    </div>
+    <p>I,Maanas Gupta has created this website. The keyboard shown is completely functional. I just wanted to create it as I don't have my keyboard with me and wanted to try to use Web development to create it. I have used HTML, CSS & JavaScript to create this.</p>
+    <audio id="audio"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
